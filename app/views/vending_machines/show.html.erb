@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @vending_machine %>
+
+<div>
+  <%= link_to "Edit this vending machine", edit_vending_machine_path(@vending_machine) %> |
+  <%= link_to "Back to vending machines", vending_machines_path %>
+
+  <%= button_to "Destroy this vending machine", @vending_machine, method: :delete %>
+</div>

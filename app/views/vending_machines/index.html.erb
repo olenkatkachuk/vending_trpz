@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Vending machines</h1>
+
+<div id="vending_machines">
+  <% @vending_machines.each do |vending_machine| %>
+    <%= render vending_machine %>
+    <p>
+      <%= link_to "Show this vending machine", vending_machine %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New vending machine", new_vending_machine_path %>
